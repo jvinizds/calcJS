@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d9bc8cead7.js" crossorigin="anonymous"></script>
+
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="inicio.html">Calculator</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="inicio.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="calc_basica.html">Basica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calc_matriz.html">Matriz</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <h1>Calculadora Basica</h1>
+                <br>
+                <input type="number" class="form-control" id="num1" />
+                <br>
+                <input type="number" class="form-control" id="num2" />
+                <br>
+                <span class="fas fa-plus cursor" style="font-size:40px" onclick="soma()"></span>
+                <span class="fas fa-minus cursor ms-5" style="font-size:40px" onclick="subtracao()"></span>
+                <br><br>
+                <span class="fas fa-divide cursor" style="font-size:40px" onclick="divisao()"></span>
+                <span class="fas fa-times cursor ms-5" style="font-size:40px" onclick="multiplicacao()"></span>
+                <br><br>
+                <input type="text" class="form-control" id="resp" readonly>
+                <br>
+                <h1>Histórico</h1>
+                <br>
+                <button type="button" class="btn btn-primary" onclick="limpar()">Limpar</button>
+                <br><br>
+                <div id="hist">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="basica.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
