@@ -12,10 +12,10 @@
     <title>Calculadora</title>
 </head>
 
-<body>
+<body class="body">
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="inicio.html">Calculator</a>
+            <a class="navbar-brand" href="index.html">Calculator</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
@@ -23,7 +23,7 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="inicio.html">Inicio</a>
+                        <a class="nav-link active" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="calc_basica.html">Basica</a>
@@ -35,6 +35,18 @@
             </div>
         </div>
     </nav>
+
+    <div class="row justify-content-center">
+        <div class="col-auto text-center">
+            <br>
+            <h1>Seja bem-vindo ao Calculator</h1>
+            <br>
+            <h3>Aqui você pode fazer cálculos basicos ou cálculos usando matriz 2x2</h3>
+            <div class="alert alert-danger" role="alert" style="display: none;" id="erroDiv">
+                <h5 id="erro"></h5>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
